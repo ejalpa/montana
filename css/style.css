@@ -1,8 +1,169 @@
 body{
-  color: #057d7b;
-  margin: 0;
-  font-size: 1em/1.5; /* 16px */
+  background-image: url(../img/dulcesFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+nav{
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 99;
+}
+/*aplica a las img hijas de a precedidas por nav */
+nav a > img{
+  height: 63px;
+  margin-left: 110px;
+  vertical-align: bottom;
+}
+/*aplica a los ul antecedidos de nav  */
+nav ul{
+  display: inline-block;
+  position: absolute;
+  margin-left: 110px;
+  margin-top: 10px;
+}
+nav ul > li{
+  list-style: none;
+  display: inline;
+  background-color: #DE1F86;
+  padding: 15px 50px;
+  margin-right: -7px;
+  font-size: 25px;
+}
+li a{
+  text-decoration: none;
+  color: white;
+}
+footer{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: #50A947;
+  padding-top: 12px;
+}
+.redes{
+  display: inline-block;
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  color: white;
+  font-size: 15px;
+}
+.redes a > img{
+  height: 45px;
+  vertical-align: middle;
+}
+footer > span{
+  float: right;
+  color: white;
+  position: relative;
+  top: 25%;
+  font-size: 12px;
+}
+footer div + span{
+  float: top;
+  right: 750px;
+  font-size: 15px;
+}
+main{
+  position: relative;
+  top: 70px;
+  display: inline-block;
+  padding-bottom: 90px;
+  width: 100%
+}
+.contenedor{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#bienvenida{
+  text-align: center;
+  color: #50A947;
+  font-size: 75px;
+  letter-spacing: 4px;
+  text-shadow: 3px 3px 1px white;
+}
+.meses{
+  text-shadow: 1.5px 1.5px 1.5px green, 2.5px 2.5px 1px white, 3.5px 3.5px 1px red;
+}
+li > span {
+  font-size: 35px;
+  vertical-align: middle;
+  background-image: linear-gradient(to right, green, white, red);
+  text-shadow: 1px 1px 1px peru;
+}
+#titulo_fechas{
+  font-size: 35px;
+  color: peru;
+  text-shadow: 3px 3px 1px white;
+
+}
+#productos{
+  text-align: center;
+  color: white;
+  font-size: 75px;
+  letter-spacing: 4px;
+}
+.listado{
+  background-color: rgba(255,255,255,0.6);
+  width: 20%;
+  height: 500px;
+  border-radius: 0 0 0 20px;
+  display: inline-block;
+  margin: 0px 70px;
+}
+.card{
+  box-shadow: 5px 7px 8px 0 rgba(0,0,0,0.3);
+  width: 100%;
+  border-radius: 0px 20px;
+  background-color: white;
+  color: #DE1F86;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.contenedor_card{
+  padding: 2px 16px;
+}
+.ubicacion{
+  display: inline-block;
+  padding: 0 25px;
+  margin-right: 0%;
+  text-align: center;
+  width: 45%;
+}
+div .ubicacion > h3{
+  background-color: pink;
+  padding: 20px 0px;
+  border-radius: 15px;
+  color: white;
+  font-size: 30px;
+}
+iframe{
+  width: 100%;
+  height: 450px;
+}
+.video{
+  display: inline-block;
+  padding: 0 325px;
+  margin-right: 0%
+  text-align: center;
+  width: 50%;
+}
+div .video > h3{
+  background-color: pink;
+  padding: 20px 0px;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+
+}
+/*
 @media  screen and (max-width: 1800px) and (min-width: 990px){
   header{
     padding-top: 170px;
@@ -38,128 +199,4 @@ body{
     float: right;
   }
 }
-/* fin de media query  1800px and 990px */
-@media  screen and (max-width: 990px) and (min-width: 600px){
-  header{
-    padding-top: 170px;
-    height: 850px;
-    background: linear-gradient(red, transparent 90%),
-                linear-gradient(0deg,white,transparent),
-                url("../img/volcan.jpg") no-repeat center;
-                background-size: cover;: 
-  }
-  body{
-    color:red;
-  }
-  .titulo{
-    color: white;
-    font-size: 1.6em;
-    letter-spacing: 0.6em;
-    padding-bottom: 10px;
-  }
-  #primera, #segunda{
-    width: 75%;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: auto;
-    max-width: 960px;
-  }
-  .hotel, .tips {
-    width: 45%;
-  }
-  .hotel{
-    float: left;
-  }
-  .tips{
-    float: right;
-  }
-}
-/* fin de media query  990px and 600px */
-@media  screen and (max-width: 600px) and (min-width: 0px){
-  header{
-    padding-top: 170px;
-    height: 850px;
-    background: linear-gradient(green, transparent 90%),
-                linear-gradient(0deg,white,transparent),
-                url("../img/volcan.jpg") no-repeat center;
-                background-size: cover;: 
-  }
-  body{
-    color:green;
-  }
-  .titulo{
-    color: white;
-    font-size: 1.6em;
-    letter-spacing: 0.6em;
-    padding-bottom: 10px;
-  }
-}
-/* fin de media query  600px and 0px */
-h1{
-  font-size: 5em;
-  color: white;
-  text-transform: uppercase;
-  margin: 12px 0 0;
-  text-shadow: 0px 10px 10px rgba(0,0,0,0.8);
-}
-h2{
-  font-size: 3em;
-  margin: 20px 0 0.5em;
-}
-h3{
-  font-size: 3em;
-  margin-bottom: 1.7 em;
-  color: #48525c;
-}
-
-img{
-  width: 100%;
-  height: 90%;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-ul, ol{
-  margin: 30px;
-}
-
-li{
-  margin-bottom: 10px;
-}
-#primera, header, footer{
-  text-align: center;
-}
-#primera{
-  padding-top: 60px;
-  padding-bottom: 10px;
-  border-bottom: 10px solid #ffa949;
-}
-#segunda{
-  padding-top: 40px;
-  padding-bottom: 70px;
-  border-bottom: 2px solid #dfe2e6;
-}
-footer{
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: 10px solid #ffa949;
-}
-.fauna{
-  color: white;
-  text-align: center;
-  padding: 18% 24%;
-  border-top: 10px solid #ffa949;
-  background: url("../img/fauna.jpg") no-repeat center;
-}
-.lk{
-  font-size: 1.25em;
-  border-bottom: 3px solid;
-  text-decoration: none;
-  padding: 0 9px 3px;
-  margin-top: 20px;
-}
-#segunda:after{
-  content: ""; /*inserta valor nulo */
-  display: block; /*convertimos a un elemento de bloque */
-  clear: both; /* especifica si eun elemento puede estar al lado del elemento precede */
-}
+*/
